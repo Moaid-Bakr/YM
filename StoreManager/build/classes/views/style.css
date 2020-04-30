@@ -1,0 +1,22 @@
+.button{
+    -fx-background-color:cornflowerblue;
+    -fx-font: "Times New Roman";
+    -fx-font-weight:bold;
+    -fx-font-size:14;
+}
+.button:hover{
+    -fx-background-color:chocolate;
+    -fx-font: "Times New Roman";
+    -fx-font-weight:bold;
+    -fx-font-size:14;
+}
+
+
+#btnDelete{
+    -fx-background-color: red;
+}
+#btnSave{
+    -fx-background-color:#66ff66;
+}#btnCancel{
+    -fx-background-color: gray;
+}

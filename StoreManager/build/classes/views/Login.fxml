@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+      <ImageView fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="462.0" layoutY="212.0" text="Mobile" />
+      <Label layoutX="462.0" layoutY="262.0" text="Password" />
+      <TextField fx:id="txtMobile" layoutX="547.0" layoutY="208.0" prefHeight="25.0" prefWidth="239.0" promptText="Enter Mobile Number" text="966550226162" />
+      <PasswordField fx:id="txtPass" layoutX="547.0" layoutY="250.0" prefHeight="25.0" prefWidth="239.0" promptText="Enter Password" text="12345" />
+      <Button fx:id="btnLogin" layoutX="547.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="28.0" prefWidth="82.0" text="Login" />
+      <Button fx:id="btnRegister" layoutX="698.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="28.0" prefWidth="94.0" text="Register" textFill="#dd0808" />
+    </children>
+</AnchorPane>

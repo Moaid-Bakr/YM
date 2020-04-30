@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SalesController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="table" layoutX="34.0" layoutY="63.0" prefHeight="378.0" prefWidth="909.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="114.0" text="ID" />
+            <TableColumn fx:id="colDate" prefWidth="176.0" text="Date" />
+             <TableColumn fx:id="colCustomer" minWidth="0.0" prefWidth="122.0" text="Customer" />
+          
+            <TableColumn fx:id="colProduct" minWidth="0.0" prefWidth="122.0" text="Product" />
+            <TableColumn fx:id="colPrice" minWidth="0.0" prefWidth="122.0" text="Price" />
+           
+            <TableColumn fx:id="colQuantity" minWidth="0.0" prefWidth="122.0" text="Quantity" />
+              <TableColumn fx:id="colAmount" minWidth="0.0" prefWidth="122.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Label layoutX="679.0" layoutY="452.0" text="Total" />
+      <TextField fx:id="txtTotal" editable="false" layoutX="744.0" layoutY="447.0" prefHeight="25.0" prefWidth="86.0" promptText="txtTotal" />
+      <Button fx:id="btnBack" layoutX="50.0" layoutY="458.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="31.0" prefWidth="92.0" text="Back" />
+      <Label layoutX="50.0" layoutY="14.0" text="My Invoices" textFill="#120f9e">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

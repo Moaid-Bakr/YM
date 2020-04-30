@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SaleAddController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="483.0" fitWidth="979.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cmbProducts" layoutX="415.0" layoutY="79.0" prefHeight="31.0" prefWidth="550.0" />
+      <Label layoutX="345.0" layoutY="83.0" text="Product" />
+      <Label layoutX="343.0" layoutY="119.0" text="Sale Price" />
+      <TextField fx:id="txtSalePrice" editable="false" layoutX="403.0" layoutY="116.0" prefHeight="31.0" prefWidth="96.0" />
+      <Label layoutX="508.0" layoutY="120.0" text="Quantity" />
+      <TextField fx:id="txtQuantity" layoutX="574.0" layoutY="116.0" prefHeight="31.0" prefWidth="96.0" />
+      <Label layoutX="683.0" layoutY="120.0" text="Amount" />
+      <TextField fx:id="txtTotal" editable="false" layoutX="748.0" layoutY="116.0" prefHeight="31.0" prefWidth="96.0" />
+      <Button fx:id="btnSave" layoutX="355.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="30.0" prefWidth="103.0" text="Save" />
+      <Button fx:id="btnBack" layoutX="511.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="30.0" prefWidth="103.0" text="Back" />
+      <Label layoutX="343.0" layoutY="47.0" text="ID" />
+      <TextField fx:id="txtId" editable="false" layoutX="418.0" layoutY="42.0" prefHeight="25.0" prefWidth="550.0" promptText="txtId" />
+      <Button fx:id="btnAdd" layoutX="865.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="30.0" prefWidth="103.0" text="Add" />
+      <TextField fx:id="txtGrandTotal" editable="false" layoutX="795.0" layoutY="449.0" prefHeight="31.0" prefWidth="141.0" />
+      <Label layoutX="734.0" layoutY="453.0" text="Total" />
+      <TableView fx:id="table" layoutX="337.0" layoutY="161.0" prefHeight="286.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="colProduct" prefWidth="191.0" text="Product" />
+          <TableColumn fx:id="colPrice" prefWidth="122.0" text="Price" />
+            <TableColumn fx:id="colQuantity" prefWidth="164.0" text="Quantity" />
+            <TableColumn fx:id="colAmount" prefWidth="170.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

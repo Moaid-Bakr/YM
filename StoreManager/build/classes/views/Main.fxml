@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+      <ImageView fitHeight="498.0" fitWidth="1006.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" alignment="TOP_CENTER" layoutX="356.0" layoutY="25.0" prefHeight="43.0" prefWidth="233.0" text="Store Manager" textFill="#117911">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogOut" layoutX="780.0" layoutY="36.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="36.0" prefWidth="186.0" text="Log Out" />
+      <Button fx:id="btnSections" layoutX="356.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleSections" prefHeight="50.0" prefWidth="258.0" text="Section" />
+      <Button fx:id="btnProducts" layoutX="674.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleProducts" prefHeight="50.0" prefWidth="258.0" text="Products" />
+      <Button fx:id="btnReports" layoutX="356.0" layoutY="342.0" mnemonicParsing="false" onAction="#handelReports" prefHeight="50.0" prefWidth="258.0" text="Reports" />
+      <Button fx:id="btnSales" layoutX="674.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleSales" prefHeight="50.0" prefWidth="258.0" text="Customer Sales" />
+      <Button fx:id="btnPurchases" layoutX="356.0" layoutY="235.0" mnemonicParsing="false" onAction="#handlePurchases" prefHeight="50.0" prefWidth="258.0" text="Add Purchase" />
+      <Button fx:id="btnMyPurchases" layoutX="674.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleMyPurchases" prefHeight="50.0" prefWidth="258.0" text="Purchases" />
+      <Button fx:id="btnAddSale" layoutX="356.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleAddSale" prefHeight="50.0" prefWidth="258.0" text="Add Sale" />
+    </children>
+</AnchorPane>
